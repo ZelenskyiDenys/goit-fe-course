@@ -19,10 +19,15 @@
 .block {
     display: inline-block;
     width: 420px;
-    padding-left: 60px;
+    
+}
+.block:nth-last-of-type(2n){
+    padding-right: 60px;
 }
 .main {
     padding-left: 150px;
+    width: 900px;
+    font-size: 0px;
 }
 .footer-button {
     margin: 57px 0 71px 575px;
