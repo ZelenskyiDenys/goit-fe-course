@@ -92,6 +92,9 @@ float: left;
 text-transform: uppercase;
 line-height: 40px;
 }
+.products_name p{
+ margin-left: 14px ;
+} 
 .products_link:hover .products_name  {
 background-color: #1abc9c;
 }
