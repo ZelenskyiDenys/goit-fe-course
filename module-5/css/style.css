@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+.wrapper {
+width: 1110px;
+margin: auto;
+}   
+.header{
+    margin-top: 38px;
+    margin-bottom: 40px;
+}
+.logo{
+    float: left;
+    text-decoration: none;
+    color: #555252;
+    text-transform: uppercase;
+    font-family:  Roboto,'Open Sans',sans-serif;
+    font-weight:light;
+}
+.logo::before{
+    content: "M";
+    color: #1abc9c;
+    font-weight: bold;
+
+}
+.header-menu{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-menu-links{
+    float: left;
+    margin-left: 36px;
+}
+.header-menu-link{
+    font-family: "open sans",sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0f0101;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-menu-link:hover{
+    color: #1abc9c;
+}
+.slider-background {
+background-image: url(../img/slide.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+position: relative;
+z-index: 1;
+}
+.slider-color{
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.slider{
+    float: left;
+    margin-top: 225px;
+    margin-bottom: 271px;
+    width: 100%;
+}
+.slider-button{
+    float: left;
+    width: 105px;
+    height: 105px;
+    background-color: #509d8b;
+    border: none;
+}
+.slider-button a {
+    text-decoration: none;
+    font-size: 70px;
+    color: #ffffff;
+    display: block;
+    height: 100%;
+}
+.slider-info{
+    float: left;
+    margin-left: 80px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+.slider-titel{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: roboto, "open sans",sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.slider-description{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: roboto, "open sans",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.slider-button:last-child{
+    float: right;
+}
