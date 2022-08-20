@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  main{
+    position: relative;
+  }
 .clearfix::after {
     content: "";
     display: table;
@@ -113,4 +116,71 @@ z-index: 1;
 }
 .slider-button:last-child{
     float: right;
+}
+.collection{
+    text-align: center;
+    background-color: #e9f0fd;
+    position: absolute;
+    width: 100%;
+}
+.collection-titel{
+    font-family: roboto, "open sans", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #515151;
+    padding-top: 100px;
+    margin-bottom: 120px;
+}
+.collection-titel::after{
+    content: "";
+    background-color: #1abc9c;
+    width: 162px;
+    height: 7px;
+    display: block;
+    margin: 32px auto 80px;
+}
+.collection-list{
+    list-style: none;
+}
+.collection-card{
+    display: inline-block;
+    width: 255px;
+    margin: 0 15px;
+}
+.collection-card img{
+    width: 100%;
+}
+.collection-card-info{
+    position: relative;
+}
+.collection-card-name{
+    padding-left: 14px;
+    width: 201px;
+    text-align: left;
+    background-color: #323232;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 18px;
+}
+.collection-card-price{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 54px;
+    background-color: #8c8c8c;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+
+.collection-card:hover .collection-card-name{
+    background-color: #1abc9c;
+}
+.collection-card:hover .collection-card-price{
+    background-color: #7fd9c7;
 }
