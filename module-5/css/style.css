@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  main{
-    position: relative;
-  }
 .clearfix::after {
     content: "";
     display: table;
@@ -120,8 +117,8 @@ z-index: 1;
 .collection{
     text-align: center;
     background-color: #e9f0fd;
-    position: absolute;
     width: 100%;
+    padding-bottom: 100px;
 }
 .collection-titel{
     font-family: roboto, "open sans", sans-serif;
@@ -183,4 +180,86 @@ z-index: 1;
 }
 .collection-card:hover .collection-card-price{
     background-color: #7fd9c7;
+}
+.collection-card:hover .collection-card-hover{
+    z-index: 1;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.collection-card-hover{
+    width: 235px;
+    height: 265px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+.collection-card-social{
+    margin-top: 80px;
+    width: 166px;
+    display: inline-block;
+}
+.collection-card-social button{
+    display: inline-block;
+    width: 50px;
+    height: 50px; 
+    padding: 0;
+    border: 1px solid #ffffff;
+    background-color:transparent; 
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.collection-card-social button:hover{
+    background-color: #1abc9c;
+}
+.collection-card-button{
+    width: 166px;
+    height: 50px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ffffff;
+    background-color: #323232;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 6px;
+}
+.collection-card-like{
+    margin-right: 4px;
+}
+.collection-card-mix{
+    margin-right: 4px;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #323232;
+}
+.quote{
+    display: inline-block;
+    font-size: 16px;
+    font-family: "open sans",sans-serif;
+    line-height: 88px;
+}
+.footer-author{
+    color: #46bfa9;
+}
+.footer-designed-c{
+    color: #ffffff;
 }
